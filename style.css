@@ -1,55 +1,102 @@
+:root {
+    --color-background: linear-gradient(45deg, rgba(3, 243, 255, 0.4), rgba(226, 14, 255, 0.4));
+    --color-container: rgba(255, 255, 255, 0.6);
+    --color-containerBox: rgba(226, 14, 255, 0.4);
+    --color-box-active: rgba(80, 160, 65, 1);
+    --color-box-NoActive: rgb(255, 255, 255);
+    --color-box-wather: rgba(15, 200, 255, 1);
+    --color-button: #ff6700;
+}
+
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
-div{
-    padding: 10px;
-    margin: 5px;
+body {
+    background: var(--color-background) no-repeat center center fixed;
 }
 
-.conteinerFull{
-    background-color: #cbe0e7;
+.conteinerFull {
+    padding: 1%;
 }
 
-.conteinerVert{
+.conteinerVert {
     display: flex;
-    border: 2px solid #76d5e9;
+    border: 2px solid var(--color-container);
     border-radius: 4px;
+    padding: 7px;
+    overflow-x: auto;
 }
 
-.VertRjad{
+.VertRjad {
+    background: rgba(255, 255, 255, 0.2);
     display: flex;
-    border: 2px solid #d876e9;
+    border: 2px solid var(--color-containerBox);
     border-radius: 4px;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
+    padding: 0;
+    margin-right: 7px;
 }
-.activeBlock{
-    height: 40px;
-    background-color: #e3da75;
-    border: 2px solid #e3da75;
-    border-radius: 4px;
-}
-.NOactiveBlock{
-    height: 40px;
-    border: 2px solid #e3da75;
+
+.activeBlock,
+.NOactiveBlock,
+.wather {
+    height: 35px;
+    width: 35px;
+    margin: 4px 4px 2px 4px;
     border-radius: 4px;
 }
 
-.conteinerGor{
+.activeBlock {
+    background: var(--color-box-active);
+    border: 2px solid var(--color-box-active);
+}
+
+.NOactiveBlock {
+    border: 2px solid var(--color-box-NoActive);
+}
+
+.wather {
+    background: var(--color-box-wather);
+    border: 2px solid var(--color-box-wather);
+}
+
+.plus {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    transition: .3s;
+}
+
+.plus:hover,
+.BtnPour:hover {
+    cursor: pointer;
+    color: var(--color-containerBox);
+    background: var(--color-container);
+    box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+.conteinerGor {
     padding: 0;
 }
 
-.BtnPour{
+.BtnPour {
+    background: none;
     font-size: 24px;
-    color: brown;
+    color: white;
     width: 100%;
     height: 50px;
-    border: 2px solid #e3da75;
+    border: 2px solid var(--color-containerBox);
     border-radius: 4px;
-    margin: 0;
+    margin-top: 1%;
+    text-transform: uppercase;
+    transition: .3s;
 }
