@@ -96,7 +96,21 @@ body {
     height: 50px;
     border: 2px solid var(--color-containerBox);
     border-radius: 4px;
-    margin-top: 1%;
+    margin: 1% 0 1% 0;
     text-transform: uppercase;
     transition: .3s;
+}
+
+.textPrj {
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--color-containerBox);
+    text-align: right;
+    text-shadow: 0 0 4px rgba(150, 150, 150, 1);
+}
+
+.NameMe {
+    color: var(--color-box-wather);
+    margin-left: 5px;
 }
