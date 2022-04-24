@@ -44,6 +44,18 @@ body {
     margin-right: 7px;
 }
 
+.header {
+    background: none;
+    flex-direction: column;
+    font-family: cursive;
+    font-weight: lighter;
+    margin-bottom: 1%;
+}
+
+.header ol {
+    margin-left: 20px;
+}
+
 .activeBlock,
 .NOactiveBlock,
 .wather {
